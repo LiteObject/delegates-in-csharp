@@ -1,7 +1,7 @@
 # Action and Func delegates in C#
 
-## Prereq:
-If you're already familier with the concept of `delegate`, then you can skip the bext section titled "What is a delegate?."
+## Prerequisite
+If you're already familier with the concept of `delegate`, then you can skip the next section titled "What is a delegate?."
 
 ## What is a `delegate`?
 In C#, a `delegate` is a way to encapsulate a method reference that allows you to treat the method as an objects. Let's take a look at an example here:
@@ -35,6 +35,7 @@ static void PrintMessage(string message)
 The Action delegate is a generic type delegate that represents **a method that does not return a value**. It can take up to 16 input parameters of any type.
 
 ```csharp
+
 // Action with no parameters
 Action print1 = () => Console.WriteLine("Hello World!");
 print1(); // Output: Hello World!
@@ -55,3 +56,8 @@ The Func delegate is a generic type delegate that represents **a method that tak
 ```csharp
 
 ```
+
+## Links
+* [Using Delegates (C# Programming Guide)](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/delegates/using-delegates)
+* [Action<T> Delegate](https://learn.microsoft.com/en-us/dotnet/api/system.action-1?view=net-7.0)
+* [Func<TResult> Delegate](https://learn.microsoft.com/en-us/dotnet/api/system.func-1?view=net-7.0)
