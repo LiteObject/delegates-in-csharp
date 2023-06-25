@@ -1,6 +1,5 @@
 # Action and Func delegates in C#
 
-## Prerequisite
 If you're already familier with the concept of `delegate`, then you can skip the next section titled "What is a delegate?."
 
 ## What is a `delegate`?
@@ -26,7 +25,7 @@ static void PrintMessage(string message)
 } 
 ```
 
-### There are two commonly used generic delegate types: 
+### In .NET there are two commonly used generic delegate types: 
 * `Action`
 * `Func`
 
