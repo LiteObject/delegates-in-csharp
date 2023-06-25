@@ -31,7 +31,7 @@ static void PrintMessage(string message)
 
 ## What is an `Action` Delegate?
 
-The Action delegate is a generic type delegate that represents **a method that does not return a value**. It can take up to 16 input parameters of any type.
+The `Action` delegate is a generic type delegate that represents **a method that does not return a value**. It can take up to 16 input parameters of any type. Here are a few examples: 
 
 ```csharp
 
@@ -47,6 +47,12 @@ print2("Hello World!"); // Output: Hello World!
 Action<string,string> print3 = (message1, message2) => Console.WriteLine($"{message1} {message2}");
 print3("Hello", "World!"); // Output: Hello World!
 ```
+
+In the first example, we define an `Actoion` delegate named `print1` that takes no parameters and simply writes "Hello World!" to the console when invoked. We can then call `print1()` to execute the method.
+
+In the second example, we define an `Action` delegate named `print2` that takes a string (`message`) as a parameter. When we invoke it, it prints the message to the console.
+
+In the third example, we define an `Action` delegate named `print3` that takes two string messages as parameters. When we invoke it, it prints those messages in sequence.
 
 ## What is an `Func` Delegate?
 
