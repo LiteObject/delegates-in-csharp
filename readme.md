@@ -54,7 +54,7 @@ In the second example, we define an `Action` delegate named `print2` that takes 
 
 In the third example, we define an `Action` delegate named `print3` that takes two string messages as parameters. When we invoke it, it prints those messages in sequence.
 
-## What is an `Func` Delegate?
+## What is a `Func` Delegate?
 
 The Func delegate is a generic type delegate that represents **a method that takes input parameters and returns a value**. The last type argument of Func represents the return type. It can take up to 16 input parameters. 
 
